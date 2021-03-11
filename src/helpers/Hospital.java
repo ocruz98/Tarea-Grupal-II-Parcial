@@ -2,6 +2,7 @@ package helpers;
 public class Hospital 
 {
     private double dimensionEdificio;
+    private double x=0, y=0, z=0;
     private String numeroPisos;
     private String colorEdificio;
     private int numeroEmpleados;
@@ -11,12 +12,19 @@ public class Hospital
     {
         System.out.println(mensaje);
     }
-    public void dimensionEdificio(String edificio, double x, double y, double z)
+    public void DimensionEdificio(String edificio, double _x, double _y, double _z, double _dimensionEdificio)
     {
-        double edi=x*y*z;
-        imprimir("Las dimensiones de "+edificio+" son: "+x+", "+y+" y "+z+" metros. Su volumen es de "+edi+" metros cuadrados.");
+        _dimensionEdificio=_x*_y*_z;
+        this.dimensionEdificio=_dimensionEdificio;
+        this.x=_x;
+        this.y=_y;
+        this.z=_z;
     }
-    public void NumeroPisos(String numeroPisos)
+    public double obtenerDimensionEdificio()
+    {
+        return this.dimensionEdificio;
+    }
+    public void NumeroPisos(String edificio, String numeroPisos)
     {
         this.numeroPisos=numeroPisos;
     }
@@ -24,7 +32,7 @@ public class Hospital
     {
         return this.numeroPisos;
     }
-    public void ColorEdificio(String colorEdificio)
+    public void ColorEdificio(String edificio, String colorEdificio)
     {
         this.colorEdificio=colorEdificio;
     }
@@ -32,13 +40,19 @@ public class Hospital
     {
         return this.colorEdificio;
     }
-    public void NumeroEmpleados(int x)
+    public void NumeroEmpleados(String edificio, int _numeroEmpleados)
     {
-        imprimir("La cantidad de empleados es de "+x+" personas");
+        this.numeroEmpleados=_numeroEmpleados;
     }
-    public void imprimirInformacion(String edificio)
+    public int obtenerNumeroEmpleados()
     {
-        imprimir("Cantidad de pisos en "+edificio+" : "+numeroPisos);
+        return this.numeroEmpleados;
     }
-    
+    public void info(String edificio)
+    {
+        imprimir("Las dimensiones de el/la "+edificio+" son: "+x+", "+y+" y "+z+" metros. Su volumen es de "+dimensionEdificio+" metros cuadrados.");
+        imprimir("El color de el/la "+edificio+" es "+colorEdificio);
+        imprimir("La cantidad de pisos de el/la "+edificio+" son "+numeroPisos);
+        imprimir("La cantidad de empleados que hay en el/la "+edificio+" es de "+numeroEmpleados);
+    }
 }
