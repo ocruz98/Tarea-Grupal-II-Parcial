@@ -13,13 +13,6 @@ public class Laboratorio extends Hospital{
 
     private String Azul;
     
-    public Laboratorio()
-    {
-        NumeroPisos("", "10");
-        ColorEdificio("", "Azúl");
-        NumeroEmpleados("", 5000);
-        DimensionEdificio("",7,78,11,0);
-    }
     
 	private String NumeroPisos;
         private String ColorEdificio;
@@ -27,7 +20,7 @@ public class Laboratorio extends Hospital{
 	private String DimencionEdificio;
 	private String idMedico;
 	
-public HistorialLaboratorio(String NumeroPisos, String ColorEdificio, String NumeroEmpleados,String idMedico, String DimencionEdificio) {
+public Laboratorio(String NumeroPisos, String ColorEdificio, String NumeroEmpleados,String idMedico, String DimencionEdificio) {
 		this.NumeroPisos = NumeroPisos;
 		this.ColorEdificio = ColorEdificio;
 		this.NumeroEmpleados= NumeroEmpleados;
@@ -82,7 +75,7 @@ public HistorialLaboratorio(String NumeroPisos, String ColorEdificio, String Num
 		System.out.println("ColorEdificio: " + Azul);
 		System.out.println("NumeroEmpleados: " + 5000);
 		System.out.println("ID Medico: " + idMedico);
-		System.out.println("DimencionEdificio:" + 7,78,11,0);
+		System.out.println("DimencionEdificio:"+78);
 		System.out.println("\t---------------");
 	}
 }
