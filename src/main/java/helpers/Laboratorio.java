@@ -10,8 +10,8 @@ package helpers;
  * @author TERNURA
  */
 public class Laboratorio extends Hospital{
-
-      public Laboratorio()
+    
+       public Laboratorio()
     {
         NumeroPisos("", "3");
         ColorEdificio("", "verde");
@@ -43,8 +43,24 @@ public class Laboratorio extends Hospital{
 
     private void añoFundacion(String string, int i) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    } 
 
+    private String Azul;
+    
+    
+	private String NumeroPisos;
+        private String ColorEdificio;
+        private String NumeroEmpleados;
+	private String DimencionEdificio;
+	private String idMedico;
+	
+public Laboratorio(String NumeroPisos, String ColorEdificio, String NumeroEmpleados,String idMedico, String DimencionEdificio) {
+		this.NumeroPisos = NumeroPisos;
+		this.ColorEdificio = ColorEdificio;
+		this.NumeroEmpleados= NumeroEmpleados;
+		this.idMedico = idMedico;
+		this.DimencionEdificio = DimencionEdificio;
+	}
 }
 
  
