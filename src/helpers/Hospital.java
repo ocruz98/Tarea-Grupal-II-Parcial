@@ -5,7 +5,8 @@ public class Hospital
     private double x=0, y=0, z=0;
     private String numeroPisos;
     private String colorEdificio;
-    private int numeroEmpleados;
+    private String direccion;
+    private int numeroEmpleados, añoFundacion;
     
     public Hospital(){}
     public void imprimir(String mensaje)
@@ -40,6 +41,14 @@ public class Hospital
     {
         return this.colorEdificio;
     }
+    public void direccion(String edificio, String direccion)
+    {
+        this.direccion=direccion; 
+    }
+    public String direccion()
+    {
+        return this.direccion;
+    }
     public void NumeroEmpleados(String edificio, int _numeroEmpleados)
     {
         this.numeroEmpleados=_numeroEmpleados;
@@ -48,11 +57,21 @@ public class Hospital
     {
         return this.numeroEmpleados;
     }
+    public void añoFundacion(String edificio, int _añoFundacion)
+    {
+        this.añoFundacion = _añoFundacion;
+    }
+    public int obtenerañoFundacion()
+    {
+        return this.añoFundacion;
+    }
     public void info(String edificio)
     {
         imprimir("Las dimensiones de el/la "+edificio+" son: "+x+", "+y+" y "+z+" metros. Su volumen es de "+dimensionEdificio+" metros cuadrados.");
         imprimir("El color de el/la "+edificio+" es "+colorEdificio);
         imprimir("La cantidad de pisos de el/la "+edificio+" son "+numeroPisos);
         imprimir("La cantidad de empleados que hay en el/la "+edificio+" es de "+numeroEmpleados);
+        imprimir("La direccion de "+edificio+" es en: "+direccion);
+        imprimir("El año de fundacion de el/la "+edificio+" es: "+añoFundacion);
     }
 }
