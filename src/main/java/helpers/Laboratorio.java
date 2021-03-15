@@ -11,73 +11,40 @@ package helpers;
  */
 public class Laboratorio extends Hospital{
 
-    private String Azul;
-    
-    
-	private String NumeroPisos;
-        private String ColorEdificio;
-        private String NumeroEmpleados;
-	private String DimencionEdificio;
-	private String idMedico;
-	
-public Laboratorio(String NumeroPisos, String ColorEdificio, String NumeroEmpleados,String idMedico, String DimencionEdificio) {
-		this.NumeroPisos = NumeroPisos;
-		this.ColorEdificio = ColorEdificio;
-		this.NumeroEmpleados= NumeroEmpleados;
-		this.idMedico = idMedico;
-		this.DimencionEdificio = DimencionEdificio;
-	}
+      public Laboratorio()
+    {
+        NumeroPisos("", "3");
+        ColorEdificio("", "verde");
+        NumeroEmpleados("", 5000);
+        DimensionEdificio("",8,78,15,0);
+        direccion("","Ave. Junior, Frente al Hospital");
+        añoFundacion("", 2000);
+    }
 
-	public String getCodigo() {
-		return NumeroPisos;
-	}
+    private void NumeroPisos(String string, String string0) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
-	public void setNumeroPisos(String NumeroPisos) {
-		this.NumeroPisos = NumeroPisos;
-	}
+    private void ColorEdificio(String string, String azúl) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
-	public String getColorEdificio() {
-		return ColorEdificio;
-	}
+    private void NumeroEmpleados(String string, int i) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
-	public void setColorEdificio(String ColorEdificio) {
-		this.ColorEdificio = ColorEdificio;
-	}
+    private void DimensionEdificio(String string, int i, int i0, int i1, int i2) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
-	public String getNumeroEmpleados() {
-		return NumeroEmpleados;
-	}
+    private void direccion(String string, String ave_14_de_Julio_esquina_opuesta_Farmacia) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
-	public void setNumeroEmpleados(String NumeroEmpleados) {
-		this.NumeroEmpleados = NumeroEmpleados;
-	}
+    private void añoFundacion(String string, int i) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 
-	public String getIdMedico() {
-		return idMedico;
-	}
-
-	public void setIdMedico(String idMedico) {
-		this.idMedico = idMedico;
-	}
-
-	public String getDimencionEdificio() {
-		return DimencionEdificio;
-	}
-
-	public void setDimencionEdificio(String DimencionEdificio) {
-		this.DimencionEdificio = DimencionEdificio;
-	}
-	
-        //Muestra todo sobre Laboratorio en el Hospital.
-	public void mostrar() {
-		System.out.println("\n\t---------------");
-		System.out.println("NumeroPisos: " + 10);
-		System.out.println("ColorEdificio: " + Azul);
-		System.out.println("NumeroEmpleados: " + 5000);
-		System.out.println("ID Medico: " + idMedico);
-		System.out.println("DimencionEdificio:"+78);
-		System.out.println("\t---------------");
-	}
 }
 
  
